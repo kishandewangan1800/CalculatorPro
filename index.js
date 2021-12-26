@@ -8,7 +8,7 @@ function calculator(btnxyz){
             case "C": display.innerText = "";
                      display1.innerText = "";
                 break;
-            case "←": if(display.innerText=="Error" || display.innerText=="undefined"){
+            case "←": if(display.innerText=="Error" || display.innerText=="undefined" || display.innerText=="Infinity"){
                          display.innerText= "";
                          display1.innerText = "";
 

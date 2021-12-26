@@ -1,0 +1,52 @@
+.container{
+    display: flexbox;
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 5px 5px 25px 5px gray;
+}
+
+
+#display-1{
+    height: 50px;
+    padding: 0 20px;
+    color: #888888;
+    line-height: 50px;
+    padding: 1px 8px;
+    font-size: 20px;
+}
+
+
+#display{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.btn{
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#equal{
+    background-color: rgb(85, 20, 85);
+    font-size: 35px;
+    color: white;
+}
+
+.btn:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s ease-in-out;
+}
+

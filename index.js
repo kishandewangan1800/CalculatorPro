@@ -2,6 +2,8 @@ let display = document.getElementById("display");
 let display1 = document.getElementById("display-1");
 let button = Array.from(document.getElementsByClassName("btn"));
 
+ 
+
 function calculator(btnxyz){
     btnxyz.addEventListener("click", (xyz)=>{
         switch(xyz.target.innerText){
@@ -17,10 +19,13 @@ function calculator(btnxyz){
                         }
                 break;
 
-            case"=" : if(display.innerText=="Error"){
+            case"=" : if(display.innerText=="Error" ){
                         display.innerText="Error"
                         display1.innerText="Error"
                         break;
+                        }else if(display.innerText[0]=="/"){
+                            display1.innerText= display.innerText;
+                            display.innerText="Error"
                         }else{
 
                          try{
